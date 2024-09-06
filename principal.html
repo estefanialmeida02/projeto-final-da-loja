@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="adenilson.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="adenilson fotos/logo_exemplo.png" class="imagem_1" alt="Logo" width="150px" height="150px">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </button>
+            <a href="principal.html" class="botão_principal">Principal</a>
+            <a href="#" class="botão_categorias">Categorias</a>
+            <a href="sobreNos.html" class="botão_sobre_nos">sobre nós</a>
+            <a href="contatos.html" class="botão_contato">Suporte & contatos</a>
+            <a href="creditos.html" class="botão_Créditos">créditos</a>
+        </div>
+    </div>
+    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+        <div class="slider-container">
+            <div class="slider">
+                <input type="radio" id="slide1" name="slide" checked>
+                <input type="radio" id="slide2" name="slide">
+                <input type="radio" id="slide3" name="slide">
+                <input type="radio" id="slide4" name="slide">
+
+                <div class="slides">
+                    <div class="slide">
+                        <img src="adenilson fotos/SKYTECH (1).png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="adenilson fotos/SKYTECH (2).png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="adenilson fotos/SKYTECH (3).png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="adenilson fotos/SKYTECH (4).png" alt="Image 4">
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="slide1" class="dot"></label>
+                    <label for="slide2" class="dot"></label>
+                    <label for="slide3" class="dot"></label>
+                    <label for="slide4" class="dot"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider2-container">
+            <div class="slider2">
+                <div class="slides2">
+                    <!-- Repeat this block for each image -->
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone1.webp" alt="Slide 1">
+                            <figcaption>
+                                <h2>Drone DJI Mavic 3 Pro Fly More Combo (Com tela) BR - DJI029</h2>
+                                <p>R$ 30.689,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                        alert("Produto adicionado ao carrinho!");
+                                    }
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone2.webp" alt="Slide 2">
+                            <figcaption>
+                                <h2>DJI Mini 2 SE</h2>
+                                <p>R$ 2.871,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                        alert("Produto adicionado ao carrinho!");
+                                    }
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone3.webp" alt="Slide 3">
+                            <figcaption>
+                                <h2>L900 Pro Gps 4K Profissional 5G Wifi</h2>
+                                <p>R$ 750,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                        alert("Produto adicionado ao carrinho!");
+                                    }
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone4.webp" alt="Slide 4">
+                            <figcaption>
+                                <h2>Drone DJI Air 2S Fly More Combo</h2>
+                                <p>R$ 11.599,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                        alert("Produto adicionado ao carrinho!");
+                                    }
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone5.webp" alt="Slide 4">
+                            <figcaption>
+                                <h2> Drone Profissional 5Km com Lente Óptica 4K FullHD Wifi / X6 2 Bateria</h2>
+                                <p>R$ 350,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone6.webp" alt="Slide 5">
+                            <figcaption>
+                                <h2>Drone DJI Mavic 3 Pro Cine Premium Combo Controle Remoto RC Pro</h2>
+                                <p>R$ 50.047,99</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone7.webp" alt="Slide 6">
+                            <figcaption>
+                                <h2>Drone E99 PRO Profissional</h2>
+                                <p>R$ 530,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone8.webp" alt="Slide 7">
+                            <figcaption>
+                                <h2>
+                                    Drone Profissional RADIANCE - Câmera 4K, WiFi,</h2>
+                                <p>R$ 800,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone9.webp" alt="Slide 8">
+                            <figcaption>
+                                <h2>Drone Lyzrc L900 Pro 4k</h2>
+                                <p>R$ 510,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone10.webp" alt="Slide 9">
+                            <figcaption>
+                                <h2>
+                                    Mini Drone Profissional Com 3 Câmeras + Motor Brushless</h2>
+                                <p>R$ 20000,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone11.webp" alt="Slide 10">
+                            <figcaption>
+                                <h2>
+                                    AE8EVO Drone profissional com câmera 4K, posicionamento GPS</h2>
+                                <p>R$ 1000,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone12.webp" alt="Slide 11">
+                            <figcaption>
+                                <h2>
+                                    Drone Profissional T58 2024: Modelo Esportivo, +Estabilidade</h2>
+                                <p>R$ 100,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone13.webp" alt="Slide 12">
+                            <figcaption>
+                                <h2>4K drone profissional HD quadricóptero com Quexoma câmera com 360 </h2>
+                                <p>R$ 360,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/drone14.webp" alt="Slide 13">
+                            <figcaption>
+                                <h2>
+                                    Drone Profissional Fpv com Câmera 4K FullHD WIfi / XT1</h2>
+                                <p>R$ 349,90</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="slider2-container">
+            <div class="slider2">
+                <div class="slides2">
+                    <!-- Repeat this block for each image -->
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/helices.webp" alt="Slide 1">
+                            <figcaption>
+                                <h2>Hélices DJI (Mavic Air 2/Air 2S) (1 Par) BR - DJI1013</h2>
+                                <p>R$ 89,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/motor propulsor.webp" alt="Slide 2">
+                            <figcaption>
+                                <h2>Motor Propulsor (Versão Global) 10033/48W Dji Agras T40 e T20P</h2>
+                                <p>R$ 2.390,00</p>
+
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/bateria.webp" alt="Slide 3">
+                            <figcaption>
+                                <h2>Bateria de voo inteligente Plus DJI (Mini 3/3 Pro/4 Pro) BR - DJI1005</h2>
+                                <p>R$ 1.229,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+          </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/LSRC S2S.webp" alt="Slide 4">
+                            <figcaption>
+                                <h2>
+                                    LSRC S2S Brushless Quadcopter Drone Peças sobressalentes</h2>
+                                <p>R$ 200,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 4">
+                            <figcaption>
+                                <h2>Produto 5</h2>
+                                <p>R$ 100,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 5">
+                            <figcaption>
+                                <h2>Produto 6</h2>
+                                <p>R$ 200,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                            
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 6">
+                            <figcaption>
+                                <h2>Produto 7</h2>
+                                <p>R$ 100,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 7">
+                            <figcaption>
+                                <h2>Produto 8</h2>
+                                <p>R$ 200,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 8">
+                            <figcaption>
+                                <h2>Produto 9</h2>
+                                <p>R$ 100,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 9">
+                            <figcaption>
+                                <h2>Produto 10</h2>
+                                <p>R$ 200,00</p>
+                                <button class="botao-compra">Comprar agora</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 10">
+                            <figcaption>
+                                <h2>Produto 11</h2>
+                                <p>R$ 100,00</p>
+                                <button class="botao-compra">Comprar agora</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 11">
+                            <figcaption>
+                                <h2>Produto 12</h2>
+                                <p>R$ 200,00</p>
+                                <button class="botao-compra">Comprar agora</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 12">
+                            <figcaption>
+                                <h2>Produto 13</h2>
+                                <p>R$ 100,00</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 13">
+                            <figcaption>
+                                <h2>Produto 14</h2>
+                                <p>R$ 200,00</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="slider2-container">
+            <div class="slider2">
+                <div class="slides2">
+                    <!-- Repeat this block for each image -->
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/braço de substituição.webp" alt="Slide 1">
+                            <figcaption>
+                                <h2>
+                                    DJI Braço de substituição original com peças de reposição</h2>
+                                <p>R$ 120,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/trava helice.webp" alt="Slide 2">
+                            <figcaption>
+                                <h2>
+                                    Kit 4 Trava Helice Drone Aero Auto-aperto M6 Aluminio Cnc</h2>
+                                <p>R$ 59,90</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/gemfan.webp" alt="Slide 3">
+                            <figcaption>
+                                <h2>
+                                    Gemfan-Hélice para câmera FPV Drone</h2>
+                                <p>R$ 100,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/trem de pouso.webp" alt="Slide 4">
+                            <figcaption>
+                                <h2>
+                                    Trem De Pouso Para Drone Syma X8pro</h2>
+                                <p>R$ 200,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 4">
+                            <figcaption>
+                                <h2>Produto 5</h2>
+                                <p>R$ 100,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 5">
+                            <figcaption>
+                                <h2>Produto 6</h2>
+                                <p>R$ 200,00</p>
+                                <button onclick="adicionarAoCarrinho()">Comprar agora</button>
+
+
+                                <script>
+
+                                    function adicionarAoCarrinho() {
+
+                                        alert("Produto adicionado ao carrinho!");
+
+                                    }
+
+                                </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 6">
+                            <figcaption>
+                                <h2>Produto 7</h2>
+                                <p>R$ 100,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 7">
+                            <figcaption>
+                                <h2>Produto 8</h2>
+                                <p>R$ 200,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 8">
+                            <figcaption>
+                                <h2>Produto 9</h2>
+                                <p>R$ 100,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 9">
+                            <figcaption>
+                                <h2>Produto 10</h2>
+                                <p>R$ 200,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 10">
+                            <figcaption>
+                                <h2>Produto 11</h2>
+                                <p>R$ 100,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 11">
+                            <figcaption>
+                                <h2>Produto 12</h2>
+                                <p>R$ 200,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 12">
+                            <figcaption>
+                                <h2>Produto 13</h2>
+                                <p>R$ 100,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slide2">
+                        <figure>
+                            <img src="adenilson fotos/Screenshot_664 (2).png" alt="Slide 13">
+                            <figcaption>
+                                <h2>Produto 14</h2>
+                                <p>R$ 200,00</p>
+                                <script>
+                                    function adicionarAoCarrinho() {
+                                    alert("Produto adicionado ao carrinho!");
+                                    }
+                                    </script>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+        </div>
+
+        <footer class="footer4">
+            <div class="footer4-content">
+                <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+                <p>
+                    <a href="politica.html">Política de Privacidade</a> |
+                    <a href="termos.html">Termos de Serviço</a> |
+                    <a href="contatos.html">Contato</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="adenilson.js"></script>
+</body>
+
+</html>
